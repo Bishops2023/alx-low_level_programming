@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "function_pointers.h"
 /**
- * array_iterator = prints each array elem on a newl
+ * array_iterator - prints each array elem on a newl
  * @array: array
  * @size: how many elem to print
  * @action: pointer to print in regular or hex
