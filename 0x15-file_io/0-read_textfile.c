@@ -23,7 +23,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (filename == NULL)
 		return (0);
 
-	file = open(filename, o_RDONLY);
+	file = open(filename, O_RDONLY);
 
 	if (file == -1)
 	{
@@ -32,7 +32,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 
 	let = read(file, text, letters);
-	w = write(ATDOUT_FILENO, text, let);
+	w = write(STDOUT_FILENO, text, let);
 
 	close(file);
 
